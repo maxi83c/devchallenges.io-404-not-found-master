@@ -1,12 +1,13 @@
-body{
-  margin: 0;
-  position: relative;
-  min-height: max(100vh, 949px);
-}
-
 *{
   box-sizing: border-box;
 }
+
+body{
+  margin: 0;
+  position: relative;
+  height: 929px;
+}
+
 
 .header__title{
   font-family: 'Inconsolata', monospace;
@@ -15,7 +16,7 @@ body{
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: -0.08em;
-  margin: 20px 0 0 24;
+  margin: 20px 0 0 24px;
   color: #333333;
 }
 
@@ -74,6 +75,8 @@ body{
 }
 
 .footer__information{
+  width: 291px;
+  height: 17px;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-style: normal;
