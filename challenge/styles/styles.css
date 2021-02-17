@@ -8,11 +8,29 @@ body{
   height: 929px;
 }
 
+@media screen and (min-width:750px){
+  body{
+    display: flex;
+    max-width: 1440px;
+    height: max(929px, 100vh);
+  }
+}
+
+@media screen and (min-width:1200px){
+  body{
+    display: flex;
+    height: 1080px;
+  }
+}
+
+
 
 .header__title{
   font-family: 'Inconsolata', monospace;
   font-size: 24px;
   font-weight: 700;
+  width: 133px;
+  height: 25px;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: -0.08em;
@@ -21,9 +39,38 @@ body{
 }
 
 .header__image{
-  width: 287px;
-  height: 238px;
+  width: 100%;
+  max-width: 287px;
+  max-height: 238px;
   margin: 64px 0 0 44px;
+}
+
+@media screen and (min-width:750px){
+  .header{
+    padding: 20px 20px 0;
+  }
+  .header__title{
+    margin: 0 0 0 4px;
+  }
+  .header__image{
+    max-width: 539px;
+    max-height: 447px;
+    margin: 64px 0 0 0;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .header{
+    padding: 40px 50px 0 77px;
+  }
+  .header__title{
+    margin: 0;
+  }
+  .header__image{
+    max-width: 539px;
+    max-height: 447px;
+    margin-top: 200px;
+  }
 }
 
 .main{
@@ -68,6 +115,32 @@ body{
   text-decoration: none;
 }
 
+@media screen and (min-width:1200px){
+  .main{
+    padding: 265px 0 0 69px;
+  }
+  .main__title{
+    height: 190px;
+    width: 586px;
+    margin: 0;
+    font-size: 64px;
+    line-height: 94.78px;
+  }
+
+  .main__information{
+    width: 381px;
+    height: 108px;
+    margin: 36px 0 0 1px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .main__button{
+    margin: 64px 0 0 5px;
+    font-size: 14px;
+  }
+}
+
 .footer{
   position: absolute;
   bottom: 24px;
@@ -86,4 +159,24 @@ body{
   text-align: center;
   margin: 0;
   color: #BDBDBD;
+}
+
+@media screen and (min-width:750px){
+  .footer{
+    left: 0;
+    width: 100%;
+  }
+  .footer__information{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .footer{
+    left: 575px;
+    width: 291px;
+  }
+  .footer__information{
+    width: 291px;
+  }
 }
